@@ -1,0 +1,96 @@
+*{
+	font-family: sans-serif;
+	margin: 5;
+	padding: 5;
+	box-sizing: border-box;
+
+}
+body,html{
+	background: #949494;
+	display: grid;
+	height: 100%;
+	text-align: center;
+place-items: center;
+}
+
+.silderRange{
+	height:auto;
+	width: 500px;
+	background: #555555;
+	border-radius: 10px;
+	padding: 0 65px 0 45px;
+
+}
+.silderRange .sliderValue{
+position: relative;
+width: 100%;
+
+}
+.silderRange .silderValue span{
+position:sticky;
+width: 45px;
+height: 45px;
+
+color: #fff;
+font-weight: 500;
+top: 390px;
+transform: translateX(-50%) scale(1);
+transform-origin: bottom;
+line-height: 55px;
+z-index: 2;
+
+}
+
+.silderRange .silderValue span.show{
+
+	transform: translateX(-50%) scale(1);
+
+
+
+}
+
+.silderRange .silderValue span:after{
+position: absolute;
+width: 45px;
+height: 45px;
+background: black;
+content: "";
+left: 50%;
+transform: translateX(-50%) rotate(45deg);
+
+z-index: -1;
+
+}
+.silderRange .field{
+position: sticky;
+display: flex;
+align-items: center;
+justify-content: center;
+height: auto;
+}
+.silderRange .field .value{
+	position: absolute;
+	font-size: 18px;
+	font-weight: 600;
+	color: blue;
+
+
+}
+.silderRange .field .value.left{
+left: -22px
+}
+.silderRange .field .value.right{
+right: -43px;
+
+
+}
+.silderRange .field input{
+
+height: 3px;
+width: 100%;
+background: #ddd;
+border-radius: 5px;
+outline: none;
+border: none;
+
+}
